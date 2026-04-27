@@ -1,21 +1,21 @@
 # jdk-17.0.18.8-hotspot-MySQL-9.6.0-Docker-Spring-Boot-3.5.13-Microservices-Loans-Management-System
 
-The application uses the Java/Spring stack and the following technologies:
-Spring Cloud Config Server, 
-Spring Cloud Netflix's Eureka, 
-Spring Cloud Load Balancer, 
-Open Feign, RabbitMQ, 
-Spring Cloud Gateway, 
-Resilience4j, 
-Grafana, 
-Loki, 
-Promtail, 
-Spring Cloud Sleuth, 
-Micrometer, 
-OpenTelemetry, 
-Spring Cloud Function, 
-Stream Cloud Stream, 
-Redis, 
-Kafka
-Kubernetes,
-Headlamp
+The application uses the Java/Spring stack and the following technologies:<br/>
+Spring Cloud Config Server, <br/>
+Spring Cloud Netflix's Eureka, <br/>
+Spring Cloud Load Balancer, <br/>
+Open Feign, RabbitMQ, <br/>
+Spring Cloud Gateway, <br/>
+Resilience4j, <br/>
+Grafana, <br/>
+Loki, <br/>
+Promtail, <br/>
+Spring Cloud Sleuth, <br/>
+Micrometer, <br/>
+OpenTelemetry, <br/>
+Spring Cloud Function, <br/>
+Stream Cloud Stream, <br/>
+Redis, <br/>
+Kafka<br/>
+Kubernetes,<br/>
+Headlamp<br/>
