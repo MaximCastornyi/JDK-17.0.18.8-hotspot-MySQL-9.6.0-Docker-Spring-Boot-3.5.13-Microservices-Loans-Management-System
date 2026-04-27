@@ -1,0 +1,56 @@
+
+services:
+  accounts:
+    image: "netsdevs/accounts:v3"
+    container_name: accounts-ms
+    ports:
+      - "8080:8080"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+     - netsdevs
+    environment:
+      SPRING_APPLICATION_NAME: "accounts"
+      SPRING_PROFILES_ACTIVE: "prod"
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"
+      BUILD_VERSION: "1.0.0"
+
+  loans:
+    image: "netsdevs/loans:v3"
+    container_name: loans-ms
+    ports:
+      - "8090:8090"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+     - netsdevs
+    environment:
+      SPRING_APPLICATION_NAME: "loans"
+      SPRING_PROFILES_ACTIVE: "prod"
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"
+      BUILD_VERSION: "1.0.0"
+
+  cards:
+    image: "netsdevs/cards:v3"
+    container_name: cards-ms
+    ports:
+      - "9000:9000"
+    deploy:
+      resources:
+        limits:
+          memory: 700m
+    networks:
+     - netsdevs
+    environment:
+      SPRING_APPLICATION_NAME: "cards"
+      SPRING_PROFILES_ACTIVE: "prod"
+      SPRING_CONFIG_IMPORT: "configserver:http://configserver:8071/"
+      BUILD_VERSION: "1.0.0"
+
+networks:
+  netsdevs:
+    driver: "bridge"

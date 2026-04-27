@@ -1,0 +1,73 @@
+server:
+  port: 8090
+build:
+  version: "1.0.0"
+spring:
+  application:
+    name: "loans"
+  profiles:
+    active: "prod"
+  datasource:
+    url: jdbc:mysql://host.docker.internal:3307/loansdb
+    username: root
+    password: 123456789
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+  sql:
+    init:
+      mode: always
+  config:
+    import: "optional:configserver:http://localhost:8071/"
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
+  endpoint:
+    shutdown:
+      access: unrestricted
+    health:
+      probes:
+        enabled: true
+  info:
+    env:
+      enabled: true
+
+eureka:
+  instance:
+    preferIpAddress: true
+    hostname: localhost
+  client:
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://eurekaserver:8070/eureka/
+info:
+  app:
+    name: "loans"
+    description: "NetDevs Bank Loans Application"
+    version: "1.0.0"
+
+
+
+loans:
+  message: "Welcome to NetDevs Bank loans related local APIs "
+  contactDetails:
+    name: "Maxim Castornyi - Developer"
+    email: "net.devs@gmail.com"
+  onCallSupport:
+    - (373) 555-1234
+    - (373) 523-1345
+
+logging:
+  level:
+    com:
+      netsdevs:
+        loans: DEBUG

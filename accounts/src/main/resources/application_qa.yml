@@ -1,0 +1,16 @@
+spring:
+  config:
+    activate:
+      on-profile: "qa"
+
+build:
+  version: "1.0.0"
+
+accounts:
+  message: "Welcome to NetDevs Bank accounts related local APIs "
+  contactDetails:
+    name: "Maxim Castornyi - QA Lead"
+    email: "net.devs@gmail.com"
+  onCallSupport:
+    - (373) 555-1234
+    - (373) 523-1345

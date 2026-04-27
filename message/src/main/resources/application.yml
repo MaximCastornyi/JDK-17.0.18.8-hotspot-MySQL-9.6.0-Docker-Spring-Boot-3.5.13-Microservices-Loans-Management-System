@@ -1,0 +1,44 @@
+#spring.application.name=message
+
+server:
+  port: 9010
+
+#spring:
+#  application:
+#    name: "message"
+#  cloud:
+#    function:
+#      definition: email|sms
+#    stream:
+#      bindings:
+#        emailsms-in-0:
+#          destination: send-communication
+#          group: ${spring.application.name}
+#        emailsms-out-0:
+#          destination: communication-sent
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: admin
+#    password: 123456789
+#    connection-timeout: 10s
+
+spring:
+  application:
+    name: "message"
+  cloud:
+    function:
+      definition: email|sms
+    stream:
+      bindings:
+        emailsms-in-0:
+          destination: send-communication
+          group: ${spring.application.name}
+          binder: kafka
+        emailsms-out-0:
+          destination: communication-sent
+          binder: kafka
+      kafka:
+        binder:
+          brokers:
+            - localhost:9092
