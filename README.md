@@ -20,6 +20,14 @@ Kafka,<br/>
 Keycloak,<br/>
 Kubernetes,<br/>
 Headlamp,<br/>
+Before using the application, you need to run Docker, then sequentially enter the directories accounts, cards, configserver, eurekaserver, gatewayserver, loans, message and in each, sequentially type:
+```bash
+mvn compile jib:dockerBuild
+```
+After this, you need to go to the \docker-compose\default> directory and run the command there:
+```bash
+docker compose up -d
+```
 <br/><br/>
 For all MySQL login is root, password is 123456789, 
 <br/><br/>
