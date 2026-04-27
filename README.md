@@ -1,6 +1,6 @@
 # jdk-17.0.18.8-hotspot-MySQL-9.6.0-Docker-Spring-Boot-3.5.13-Microservices-Loans-Management-System
 
-The application uses the Java/Spring stack and the following technologies:<br/>
+The application uses the Java/Spring stack and the following technologies:<br/><br/>
 Spring Cloud Config Server, <br/>
 Spring Cloud Netflix's Eureka, <br/>
 Spring Cloud Load Balancer, <br/>
@@ -19,7 +19,7 @@ Redis, <br/>
 Kafka,<br/>
 Keycloak,<br/>
 Kubernetes,<br/>
-Headlamp,<br/>
+Headlamp,<br/><br/>
 Before using the application, you need to run Docker, then sequentially enter the directories accounts, cards, configserver, eurekaserver, gatewayserver, loans, message and in each, sequentially type:
 ```bash
 mvn compile jib:dockerBuild
