@@ -16,12 +16,20 @@ OpenTelemetry, <br/>
 Spring Cloud Function, <br/>
 Stream Cloud Stream, <br/>
 Redis, <br/>
-Kafka<br/>
+Kafka,<br/>
+Keycloak,<br/>
 Kubernetes,<br/>
-Headlamp<br/>
-
+Headlamp,<br/>
 <br/><br/>
-<img width="2090" height="1024" alt="Copilot_20260427_125608" src="https://github.com/user-attachments/assets/1ceb4ae8-956b-4fe0-92fc-ad931b9eaebc" />
+For all MySQL login is root, password is 123456789, 
+<br/><br/>
+For RabbitMQ login is admin password is 123456789
+<br/><br/>
+For Keycloak login is admin password is 123456789
+<br/><br/>
+For Grafana login is admin password is 123456789
+<br/><br/>
+<img width="2090" height="1024" alt="Copilot_20260427_125608" src="https://github.com/user-attachments/assets/3b6cfdc3-d263-4593-a7f7-f18709987077" />
 <br/><br/>
 <img width="1251" height="629" alt="Screenshot 2026-04-19 075356" src="https://github.com/user-attachments/assets/831786d5-54e4-4117-97ce-5d6e67bcd8e3" />
 <br/><br/>
