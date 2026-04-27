@@ -19,3 +19,6 @@ Redis, <br/>
 Kafka<br/>
 Kubernetes,<br/>
 Headlamp<br/>
+
+<br/><br/>
+<img width="2090" height="1024" alt="Copilot_20260427_125608" src="https://github.com/user-attachments/assets/aa35ade0-db45-4db3-96cb-0661e67edbbf" />
